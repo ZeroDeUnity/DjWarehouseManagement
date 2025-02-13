@@ -1,0 +1,904 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>出库界面</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- 引入 Select2 CSS -->
+    <link href="~/Content/select2.css" rel="stylesheet" />
+    <link href="~/Scripts/jquery-ui-1.14.1/jquery-ui.css" rel="stylesheet" />
+    <style>
+        /* 批次的div样式 */
+        .batch-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 全屏覆盖的弹出div */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 8888;
+            display: none;
+            overflow-y: auto; /* 确保弹出内容可滚动 */
+        }
+
+        .overlay-content {
+            background-color: #fff;
+            padding: 20px;
+            margin: 50px auto;
+            width: 80%;
+            height: 80%;
+            overflow-y: auto;
+            position: relative; /* 添加相对定位，确保确定按钮固定在底部 */
+        }
+
+        /* 样式设置 */
+        .close-btn, .create-btn {
+            margin-right: 10px;
+        }
+
+        .stock-item {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* 禁止页面在弹出时滚动 */
+        body.modal-open {
+            overflow: hidden !important;
+        }
+
+        /* 确定按钮固定在弹出div的最底部并占满宽度 */
+        .confirm-create-btn {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0; /* 确定按钮的圆角去掉 */
+            padding: 15px;
+        }
+
+        .my-dialog {
+            z-index: 9999; /* 设置一个较高的z - index值 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row mb-3 align-items-end">
+            <!-- 使用row和align-items-end让元素对齐到底部 -->
+            <div class="col-auto">
+                <!-- 设置col-auto以自适应宽度 -->
+                <label for="dateInput" class="form-label">选择日期:</label>
+                <input type="date" class="form-control" id="dateInput">
+            </div>
+            <div class="col-auto">
+                <!-- 让按钮紧随日期输入框自适应宽度排列 -->
+                <button class="btn btn-primary create-btn" id="createBatch_Btn_Div">新建批次</button>
+            </div>
+        </div>
+        <div id="batchContainer"></div>
+    </div>
+
+    <!-- 全屏覆盖的详细div -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button class="btn btn-secondary close-btn" id="closeOverlay_Btn">返回</button>
+            <button class="btn btn-primary create-btn" id="createBatchData_Btn_Div">创建出库</button>
+            <button class="btn btn-primary create-btn" id="updateBatch_Btn_Div">修改批次</button>
+
+            <div id="stockDataContainer"></div>
+        </div>
+    </div>
+
+    <!-- 创建出库批次的弹出div -->
+    <div id="createStockOverlay" class="overlay">
+        <div class="overlay-content">
+            <button class="btn btn-secondary close-create-btn" id="closeBatch_Btn_Div">返回</button>
+            <h3>创建出库批次数据</h3>
+
+            <!-- 新增 出库方 输入框 -->
+            <div class="mb-3">
+                <label for="destination" class="form-label">出库目标:</label>
+                <input type="text" class="form-control" id="destination" placeholder="请输入出库目标">
+                <label for="orderId" class="form-label">订单号:</label>
+                <input type="number" class="form-control" id="orderId" placeholder="请输入订单号">
+            </div>
+
+            <!-- 新增 确定 按钮，并固定在最下方，宽度占满 -->
+            <button class="btn btn-primary confirm-create-btn" id="createBatch_Btn_Save">保存</button>
+        </div>
+    </div>
+
+    <!-- 创建出库数据的弹出div -->
+    <div id="createStockDataOverlay" class="overlay">
+        <div class="overlay-content ">
+            <button class="btn btn-secondary close-create-btn" id="closeBatchData_Div">返回</button>
+            <h3>创建出库数据</h3>
+            <!-- 创建出库数据的表单可以在这里添加 -->
+            <label for="source1" class="form-label">产品类别:</label>
+            <!-- 在下面添加一个下拉框,选择项有正品,B级布,默认是正品 -->
+            <select class="form-select" id="selectProductType">
+                <option value="正品">正品</option>
+                <option value="B级品">B级品</option>
+            </select>
+            <label for="source1" class="form-label">选择产品:</label>
+            <!-- 下拉框,动态输入搜索结果出现选项 -->
+            <select class="form-select" id="selectProduct" style="width: 100%;">
+            </select>
+
+            <label for="actualSize" class="form-label">实际码数:</label>
+            <!-- 在下面是输入框,输入数字 -->
+            <input type="number" class="form-control" id="actualSize" placeholder="请输入实际码数">
+
+            <label for="quantityOut" class="form-label">出库数量:</label>
+            <!-- 在下面是输入框,输入数字 -->
+            <input type="number" class="form-control" id="quantityOut" placeholder="请输入出库数量">
+
+            <div>
+                <!-- 下面用label展示选择产品后的计算属性:产品颜色/颜色代码,规格,工艺,所在货架,货架剩余数量-->
+                <label id="product" style="display: block; color: #d56516; text-align: left;"> </label>
+                <label id="specification" style="display: block; color: #d56516; text-align: left;"> </label>
+                <label id="process" style="display: block; color: #d56516; text-align: left;"> </label>
+                <label id="shelfInfo" style="display: block; color: #d56516; text-align: left;"> </label>
+                <label id="RemainingQuantity" style="display: block; color: #d56516; text-align: left;"> </label>
+            </div>
+
+            <label id="hightLabel" style="height:200px;"></label>
+            <!-- 这里可以添加其他创建入库的表单 -->
+            <!-- 新增 确定 按钮，并固定在最下方，宽度占满 -->
+            <button class="btn btn-primary confirm-create-btn" id="createBatchData_Save">保存</button>
+        </div>
+    </div>
+
+    <!-- 引入jQuery和Bootstrap的JS -->
+    <script src="~/Scripts/jquery-3.7.0.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.14.1/jquery-ui.js"></script>
+    <!-- 引入 Select2 JS -->
+    <script src="~/Scripts/select2.js?v=1.1.1"></script>
+
+    <script>
+        //当前展示批次
+        var now_BatchId = null;
+        //当前出库目标
+        var now_Destination = null;
+        //当前订单号
+        var now_OrderId = null;
+        //当前批次数据ID
+        var now_stockId = null;
+        //当前选择产品码数
+        var now_ProductSize = null;
+        //当前产品实际码数
+        var now_actualSize = null;
+        //当前修改的产品Id
+        var now_UpdateProductId = null;
+        //当前批次页面状态(新增/修改)
+        var now_stockBatchViewStatus = "新增";
+        //当前批次数据页面状态(新增/修改)
+        var now_stockViewStatus = "新增";
+        //当前选择的产品剩余数量
+        var now_productQuantity = 0;
+        //当前产品出库数量
+        var now_productQuantityOut = 0;
+        //当前所要修改的出库数据关联的mappingId
+        var now_mappingId = null;
+
+        var selectProduct_Data = null;
+        var selectShelf_Data = null;
+        var selectNearShelf1_Data = null;
+        var selectNearShelf2_Data = null;
+
+
+        $(document).ready(function () {
+
+            // 初始化时设置日期为当前日期
+            var today = new Date().toISOString().split('T')[0];  // 获取当前日期的 yyyy-mm-dd 格式
+            $('#dateInput').val(today);  // 设置为当前日期
+
+            // 默认加载当前日期的批次数据
+            loadBatchData(today);
+
+            initializeSelectProduct();
+
+            $(".form-select").on("select2:open", function () {
+                $(".select2-container--open").css("z-index", 9999);
+            });
+
+        });
+
+        // 初始化 select2 的函数
+        function initializeSelectProduct() {
+
+            var selectProductType_Val = $("#selectProductType").val();
+            // 发起 AJAX 请求来获取数据,完成产品数据加载
+            $.ajax({
+                url: '/StockExit/QueryProductInfoByInput',
+                type: 'POST',
+                async: false,
+                data: {
+                    selectProductType: selectProductType_Val,
+                    now_stockViewStatus: now_stockViewStatus,
+                    now_mappingId: now_mappingId
+                },
+                dataType: 'json',
+                success: function (data) {
+
+                    var processedData = [];
+
+                    for (var i = 0; i < data.length; i++) {
+                        var item = data[i];
+
+                        if (selectProductType_Val == "正品") {
+                            var newItem = {
+                                id: item.product_Id + '_' + item.mapping_Id + '_' + item.actualSize,
+                                text: item.colorCode + '/' + item.color + '___' + item.process + '___[' + item.actualSize + '码]' + '___' + '位置:' + item.explain + '___' + '数量:' + item.remainingQuantity + '支'
+                                //text: item.colorCode + '/' + item.color + ' ' + item.specification + ' ' + item.process + ' [' + item.actualSize + '码]' + ' ' + '位置:' + item.explain + ' ' + '数量:' + item.remainingQuantity + '支'
+                            };
+                        } else {
+                            var newItem = {
+                                id: item.product_Id + '_' + item.mapping_Id + '_' + item.actualSize,
+                                text: item.process + '___[' + item.actualSize + '码]' + '___' + '位置:' + item.explain + '___' + '数量:' + item.remainingQuantity + '支'
+                                //text: item.specification + ' ' + item.process + ' [' + item.actualSize + '码]' + ' ' + '位置:' + item.explain + ' ' + '数量:' + item.remainingQuantity + '支'
+                            };
+                        }
+
+                        processedData.push(newItem);
+                    }
+                    selectProduct_Data = processedData;
+                    $('#selectProduct').empty();
+                    // 数据加载完成后，初始化 select2
+                    $('#selectProduct').select2({
+                        data: selectProduct_Data, // 使用预加载的数据
+                        placeholder: '请选择产品', // 提示文本
+                        allowClear: true // 允许清除已选择的选项
+                    });
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.error('AJAX 请求失败:', textStatus, errorThrown);
+                }
+            });
+
+            //$('#selectProduct').val(null).trigger('change');
+
+        }
+
+
+
+        // 加载批次数据
+        function loadBatchData(date) {
+            var batchContainer = $('#batchContainer');
+            batchContainer.empty(); // 清空之前的批次数据
+
+            // 发送Ajax请求到后端
+
+            $.ajax({
+                url: '/StockExit/QueryStockExitBatchData', // 后端控制器的路径
+                type: 'POST',
+                data: {
+                    exitTime: date
+                },
+                success: function (response) {
+                    // 确保数据为JSONArray数组对象
+                    var data = JSON.parse(response);
+
+                    // 处理后端返回的数据
+                    if (data.length === 0 || data[0].Id == null) {
+                        batchContainer.append('<p>该日期无批次数据。</p>');
+                    } else {
+                        data.forEach(item => {
+                            var resultDiv = `
+                                                                        <div class="batch-item" data-id="${item.Id}" onclick="batchItemClick(${item.Id},'${item.destination}','${item.orderId}')">
+                                                                            <p><strong>批次号:</strong> ${item.orderId}  (${item.batchCode})</p>
+                                                                            <p><strong>出库目标:</strong> ${item.destination}</p>
+                                                                            <p><strong>出库数量:</strong> ${item.totalQuantity == null ? 0 : item.totalQuantity}</p>
+                                                                        </div>`;
+                            batchContainer.append(resultDiv);
+                        });
+                    }
+                },
+                error: function () {
+                    batchContainer.append('<p class="no-results">查询出错，请稍后再试。</p>');
+                }
+            });
+
+        }
+
+        // 点击批次，弹出详情
+        function batchItemClick(batchId, destination, orderId) {
+
+            showOverlay(batchId, destination, orderId);
+            // 禁止底层页面滚动，展示全屏的div
+            $('#overlay').show();
+            $('body').addClass('modal-open');  // 禁止页面滚动
+        }
+
+        // 展示弹出窗口，展示批次数据+
+        function showOverlay(batchId, destination, orderId) {
+            var stockDataContainer = $('#stockDataContainer');
+            stockDataContainer.empty(); // 清空之前的数据
+
+            // 发送Ajax请求到后端
+            $.ajax({
+                url: '/StockExit/QueryStockExitDataByBatchId', // 查询出库数据,根据出库批次Id查询
+                type: 'POST',
+                data: {
+                    batchId: batchId
+                },
+                success: function (response) {
+                    // 确保数据为JSON对象
+                    var data = JSON.parse(response);
+
+                    // 处理后端返回的数据
+                    if (data.length === 0) {
+                        //alert(stockDataContainer);
+                        stockDataContainer.append('<p>该日期无批次数据。</p>');
+                    } else {
+                        data.forEach(stock => {
+                            var resultDiv = ``;
+                            resultDiv += `<div class="stock-item" data-id="${stock.Id}" onclick="stockItemClick(${stock.Id})">`;
+                            if (stock.productType == "正品") {
+                                resultDiv += `<p>产品: ${stock.color} / ${stock.colorCode}</p >`;
+                            } else {
+                                resultDiv += `<p>产品: B级品: ${stock.process}</p >`;
+                            }
+                            resultDiv += `<p>规格: ${stock.specification}(${stock.actualSize}码)</p>`;
+                            resultDiv += `<p>工艺: ${stock.process}</p>`;
+                            resultDiv += `<p>仓位: ${stock.explain}</p>`;
+                            resultDiv += `<p>数量: ${stock.quantityOut}</p>`;
+                            resultDiv += `<button class="btn btn-danger btn-sm delete-stock" onclick="stockItemDelete(${stock.Id},event)">删除</button>`;
+                            resultDiv += `</div>`;
+                            stockDataContainer.append(resultDiv);
+                        });
+                    }
+                },
+                error: function () {
+                    stockDataContainer.append('<p class="no-results">查询出错，请稍后再试。</p>');
+                }
+            });
+
+            //赋值,显示批次号,产品来源
+            now_BatchId = batchId;
+            now_Destination = destination;
+            now_OrderId = orderId;
+        }
+
+        function stockItemClick(stockId) {
+            show_createStockDataOverlay(stockId);
+
+            $('#createStockDataOverlay').show();
+            // 禁止底层页面滚动，展示全屏的div
+            $('body').addClass('modal-open');  // 禁止页面滚动
+        }
+
+        // 展示弹出窗口，展示批次数据
+        function show_createStockDataOverlay(stockId) {
+
+            //初始化当前批次数据ID
+            now_stockId = stockId;
+            //初始化当前批次数据界面状态
+            now_stockViewStatus = "修改";
+
+            // 发送Ajax请求到后端
+            $.ajax({
+                url: '/StockExit/QueryStockExitDataByStockId', // 查询出库数据,根据出库批次Id查询
+                type: 'POST',
+                data: {
+                    stockId: stockId
+                },
+                success: function (response) {
+                    // 确保数据为JSON对象
+                    var data = JSON.parse(response);
+                    //alert(data[0].shelf_Id);
+                    //解析数据,赋值给对应的控件
+                    $('#selectProductType').val(data[0].productType);
+                    now_mappingId = data[0].mapping_IdList;
+                    //alert(now_mappingId);
+
+                    //alert(data[0].mapping_Id);
+                    initializeSelectProduct();
+                    var selectProduct_Val = data[0].productId + "_" + data[0].mapping_Id + "_" + data[0].actualSize;
+                    $("#selectProduct").val(selectProduct_Val).trigger('change');
+
+                    var selectProduct_text = $("#selectProduct").select2('data')[0].text;
+                    var parts = selectProduct_text.split('[');
+                    now_ProductSize = parts[1].split('码')[0];
+                    now_actualSize = data[0].Exit_actualSize;
+                    now_UpdateProductId = selectProduct_Val;
+
+                    $('#actualSize').val(data[0].Exit_actualSize);
+                    $('#quantityOut').val(data[0].quantityOut);
+                    now_productQuantityOut = data[0].quantityOut;
+                    queryProductStatus();
+                },
+                error: function () {
+                    stockDataContainer.append('<p class="no-results">查询出错，请稍后再试。</p>');
+                }
+            });
+
+        }
+
+        //下拉框selectProductType 变化后
+        $('#selectProductType').change(function () {
+            var selectedValue = $(this).val();
+            initializeSelectProduct();
+
+            $('#selectProduct').val(null).trigger('change');
+
+            //queryProductStatus();
+
+        });
+
+        //产品选择后,触发事件
+        $('#selectProduct').change(function () {
+            if ($("#selectProduct").select2('data')[0] != null) {
+                var selectProduct_text = $("#selectProduct").select2('data')[0].text;
+                var parts = selectProduct_text.split('[');
+                now_ProductSize = parts[1].split('码')[0];
+                var selectProductId = $('#selectProduct').val();
+
+                if (now_UpdateProductId == selectProductId) {
+
+                    if (now_actualSize != null) {
+                        $('#actualSize').val(now_actualSize);
+                    } else {
+                        $('#actualSize').val(now_ProductSize);
+                    }
+                } else {
+                    $('#actualSize').val(now_ProductSize);
+                }
+
+            }
+            queryProductStatus();
+        });
+
+        //查询数据库,获取出货产品相关信息
+        function queryProductStatus() {
+            //清除shelfDataTitle的值
+            $('#shelfDataTitle').text("");
+            var selectProductType = $('#selectProductType').val();
+            var selectedProduct = $('#selectProduct').val();
+            var quantityOut = $('#quantityOut').val();
+
+            if (selectedProduct == null) {
+                return;
+            }
+
+            // 数据组装成JSON
+            var data = {
+                batchId: now_BatchId,
+                selectedProduct: selectedProduct,
+                selectProductType: selectProductType,
+                quantityOut: quantityOut
+            };
+
+            //用ajax提交数据到后端
+            $.ajax({
+                url: '/StockExit/queryProductStatus', // 后端控制器的路径
+                type: 'POST',
+                data: {
+                    dataJson: JSON.stringify(data)
+                },
+                success: function (response) {
+                    if (response == null) {
+                        //alert('查询货架状态失败，请稍后再试。');
+                    } else {
+                        var shelfData = JSON.parse(response);
+
+                        var item = shelfData[0];
+
+                        //给产品标签都赋值
+                        $('#product').text("产品:" + item.color + "/" + item.colorCode);
+                        $('#specification').text("规格:" + item.specification);
+                        $('#process').text("工艺:" + item.process);
+                        $('#shelfInfo').text("所在货架:" + item.explain);
+                        $('#RemainingQuantity').text("货架剩余数量:" + item.remainingQuantity + "支");
+
+                        now_productQuantity = item.remainingQuantity;
+
+                    }
+
+                },
+                error: function () {
+                    alert('查询产品数据失败，请稍后再试。');
+                }
+            });
+        }
+
+        //出货数量变化后,触发事件
+        $('#quantityOut').change(function () {
+            quantityOutCheck();
+        });
+
+        function quantityOutCheck() {
+            //判断出货数量是否大于now_productQuantity,如果大于则弹窗提示当前出货量大于货架库存量,请确认出货量
+            var quantityOut = $('#quantityOut').val();
+
+            var UpdateProductId = $("#selectProduct").val();
+
+            if (now_UpdateProductId != UpdateProductId) {
+                if (Number(quantityOut) > Number(now_productQuantity)) {
+                    //now_productQuantityOut
+                    $('#quantityOut').val('');
+                    //alert('当前出货量大于货架库存量,请确认出货量');
+                }
+            } else {
+                if (Number(quantityOut) > Number(now_productQuantity) + Number(now_productQuantityOut)) {
+                    //now_productQuantityOut
+                    $('#quantityOut').val('');
+                    //alert('当前出货量大于货架库存量,请确认出货量');
+                }
+            }
+        }
+
+        // 日期选择后，加载相应的批次数据
+        $('#dateInput').change(function () {
+            var selectedDate = $(this).val();
+            loadBatchData(selectedDate);
+        });
+
+        // 关闭详细div
+        $('#closeOverlay_Btn').click(function () {
+            $('#overlay').hide();
+            $('body').removeClass('modal-open');  // 允许页面再次滚动
+        });
+
+        // 创建入库按钮点击
+        $('#createBatch_Btn_Div').click(function () {
+            now_stockBatchViewStatus = "新增";
+            $('#createStockOverlay').show();
+            // 禁止底层页面滚动，展示全屏的div
+            $('body').addClass('modal-open');  // 禁止页面滚动
+        });
+
+        // 修改批次按钮点击
+        $('#updateBatch_Btn_Div').click(function () {
+            now_stockBatchViewStatus = "修改";
+            $('#destination').val(now_Destination);
+            $('#orderId').val(now_OrderId);
+            $('#createStockOverlay').show();
+            // 禁止底层页面滚动，展示全屏的div
+            $('body').addClass('modal-open');  // 禁止页面滚动
+        });
+
+        // 关闭创建入库div
+        $('#closeBatch_Btn_Div').click(function () {
+            $('#destination').val('');
+            $('#orderId').val('');
+
+            $('#createStockOverlay').hide();
+            $('body').removeClass('modal-open');  // 允许页面再次滚动
+        });
+
+        // 确定按钮点击事件，关闭弹出窗口
+        $('#createBatch_Btn_Save').click(function () {
+            var destination = $('#destination').val();
+            var orderId = $('#orderId').val();
+            var date = $('#dateInput').val();
+            if (!destination) {
+                alert('请输入出库目标');
+                return;
+            }
+            if (!orderId) {
+                alert('请输入订单号');
+                return;
+            }
+
+            if (now_stockBatchViewStatus == "新增") {
+                //用ajax提交数据到后端,方法为AddStockEntryBatchData,方法会返回字符串,如果是数字,则表示成功,否则表示失败
+                $.ajax({
+                    url: '/StockExit/AddStockExitBatchData', // 后端控制器的路径
+                    type: 'POST',
+                    data: {
+
+                        destination: destination,
+                        orderId: orderId,
+                        date: date
+                    },
+                    success: function (response) {
+                        if (isNaN(response)) {
+                            alert('创建出库批次失败，请稍后再试。');
+                        } else {
+                            //清空输入框
+                            $('#destination').val('');
+                            $('#orderId').val('');
+                            var selectedDate = $('#dateInput').val();
+                            loadBatchData(selectedDate);// 重新加载批次数据
+                        }
+                    },
+                    error: function () {
+                        alert('创建出库批次失败，请稍后再试。');
+                    }
+                });
+            } else {
+                //用ajax提交数据到后端,方法为UpdateStockEntryBatchData,方法会返回字符串,如果是数字,则表示成功,否则表示失败
+                $.ajax({
+                    url: '/StockExit/UpdateStockExitBatchData', // 后端控制器的路径
+                    type: 'POST',
+                    data: {
+                        batchId: now_BatchId,
+                        destination: destination,
+                        orderId: orderId,
+                        date: date
+                    },
+                    success: function (response) {
+                        if (isNaN(response)) {
+                            alert('修改出库批次失败，请稍后再试。');
+                        } else {
+                            now_Destination = destination;
+                            now_OrderId = orderId;
+                            //清空输入框
+                            $('#destination').val('');
+                            $('#orderId').val('');
+                            var selectedDate = $('#dateInput').val();
+                            loadBatchData(selectedDate);// 重新加载批次数据
+                        }
+                    },
+                    error: function () {
+                        alert('创建出库批次失败，请稍后再试。');
+                    }
+                });
+            }
+
+
+            // 隐藏创建出库批次的弹出div
+            $('#createStockOverlay').hide();
+
+
+        });
+
+        // 创建出库数据按钮点击
+        $('#createBatchData_Btn_Div').click(function () {
+
+            now_stockViewStatus = "新增";
+
+            now_actualSize = null;
+            now_ProductSize = null;
+            now_UpdateProductId = null;
+            now_productQuantityOut = 0;
+            $('#selectProductType').val('正品');
+            $('#actualSize').val('');
+            $('#quantityOut').val('');
+            $('#selectProduct').val(null).trigger('change');
+
+            $('#createStockDataOverlay').show();
+            // 禁止底层页面滚动，展示全屏的div
+            $('body').addClass('modal-open');  // 禁止页面滚动
+        });
+
+        // 关闭创建出库数据div
+        $('#closeBatchData_Div').click(function () {
+            $('#createStockDataOverlay').hide();
+            $('body').removeClass('modal-open');  // 允许页面再次滚动
+
+            now_actualSize = null;
+            now_ProductSize = null;
+            now_UpdateProductId = null;
+            now_productQuantityOut = 0;
+            $('#selectProductType').val('正品');
+            $('#actualSize').val('');
+            $('#quantityOut').val('');
+            $('#selectProduct').val(null).trigger('change');
+
+            initializeSelectProduct();
+
+        });
+
+        // 确定按钮点击事件，关闭弹出窗口
+        $('#createBatchData_Save').click(function () {
+
+            quantityOutCheck();
+
+            // 数据验证
+            var selectedProductType = $('#selectProductType').val();
+            var selectedProduct = $('#selectProduct').val();
+            var actualSize = $('#actualSize').val();
+            var quantityOut = $('#quantityOut').val();
+
+            var selectedExplain = $('#selectExplain').val();
+
+            
+
+            if (!selectedProduct) {
+                alert('请选择产品');
+                return;
+            }
+            if (actualSize === '' || isNaN(actualSize) || actualSize <= 0) {
+                alert('请输入有效的码数');
+                return;
+            }
+            if (quantityOut === '' || isNaN(quantityOut) || quantityOut <= 0) {
+                alert('请输入有效的出库数量');
+                return;
+            }
+
+
+            var data = {
+                stockId: now_stockId,
+                batchId: now_BatchId,
+                selectedProductType: selectedProductType,
+                selectedProduct: selectedProduct,
+                actualSize: actualSize,
+                quantityOut: quantityOut,
+                now_productQuantity: now_productQuantity
+            };
+
+            if (now_stockViewStatus == "新增") {
+                // 将JSON数据传给后台处理
+                $.ajax({
+                    url: '/StockExit/AddStockExitData', // 修改为实际的后端处理路径
+                    type: 'POST',
+                    data: {
+                        dataJson: JSON.stringify(data)
+                    },
+                    success: function (response) {
+                        var data = JSON.parse(response);
+                        if (data.status == "success") {
+                            // 清空输入框和相关选择项（可选）
+                            now_actualSize = null;
+                            now_ProductSize = null;
+                            now_UpdateProductId = null;
+                            now_productQuantityOut = 0;
+                            $('#selectProductType').val('正品');
+                            $('#actualSize').val('');
+                            $('#quantityOut').val('');
+
+                            $('#selectProduct').val(null).trigger('change');
+
+
+                            initializeSelectProduct();
+
+
+                            //alert('出库数据创建成功');
+                            $(`<div title="处理信息" style="z - index: 9999;">出库数据创建成功</div>`).dialog({
+                                modal: true,
+                                draggable: false,
+                                classes: {
+                                    "ui-dialog": "my-dialog"
+                                },
+                                open: function () {
+                                    setTimeout(function () {
+                                        $(this).dialog("close");
+                                    }.bind(this), 1000); // 1秒后自动关闭
+                                }
+                            });
+
+                            showOverlay(now_BatchId);
+                            // 禁止底层页面滚动，展示全屏的div
+                            $('#overlay').show();
+                            $('body').addClass('modal-open');  // 禁止页面滚动
+                            var selectedDate = $('#dateInput').val();
+                            loadBatchData(selectedDate);// 重新加载批次数据
+                        } else {
+                            alert('出库数据创建失败，请稍后再试');
+                        }
+                    },
+                    error: function () {
+                        alert('请求出错，请稍后再试');
+                    }
+                });
+            } else {
+                // 将JSON数据传给后台处理
+                $.ajax({
+                    url: '/StockExit/UpdateStockExitData', // 修改为实际的后端处理路径
+                    type: 'POST',
+                    data: {
+                        dataJson: JSON.stringify(data)
+                    },
+                    success: function (response) {
+                        var data = JSON.parse(response);
+                        if (data.status == "success") {
+                            // 清空输入框和相关选择项（可选）
+                            now_actualSize = null;
+                            now_ProductSize = null;
+                            now_UpdateProductId = null;
+                            now_productQuantityOut = 0;
+                            $('#selectProductType').val('正品');
+                            $('#actualSize').val('');
+                            $('#quantityOut').val('');
+
+                            $('#selectProduct').val(null).trigger('change');
+
+
+                            initializeSelectProduct();
+
+                            //alert('数据更新成功');
+                            $(`<div title="处理信息" style="z - index: 9999;">出库数据更新成功</div>`).dialog({
+                                modal: true,
+                                draggable: false,
+                                classes: {
+                                    "ui-dialog": "my-dialog"
+                                },
+                                open: function () {
+                                    setTimeout(function () {
+                                        $(this).dialog("close");
+                                    }.bind(this), 1000); // 1秒后自动关闭
+                                }
+                            });
+
+                            showOverlay(now_BatchId);
+                            // 禁止底层页面滚动，展示全屏的div
+                            $('#overlay').show();
+                            $('body').addClass('modal-open');  // 禁止页面滚动
+                            var selectedDate = $('#dateInput').val();
+                            loadBatchData(selectedDate);// 重新加载批次数据
+                        } else {
+                            alert('数据更新失败，请稍后再试');
+                        }
+                    },
+                    error: function () {
+                        alert('请求出错，请稍后再试');
+                    }
+                });
+            }
+
+            // 隐藏创建出库数据的弹出div
+            $('#createStockDataOverlay').hide();
+            $('body').removeClass('modal-open');
+        });
+
+        function stockItemDelete(stockId, event) {
+            event.stopPropagation(); // 阻止事件冒泡
+
+            //弹出确认框,确认则进一步删除,否则不删除
+            var r = confirm("确定删除该数据吗?");
+            if (r == true) {
+                // 将JSON数据传给后台处理
+                $.ajax({
+                    url: '/StockExit/DeleteStockExitData', // 修改为实际的后端处理路径
+                    type: 'POST',
+                    data: {
+                        stockId: stockId
+                    },
+                    success: function (response) {
+                        var data = JSON.parse(response);
+                        if (data.status == "success") {
+
+                            $(`<div title="处理信息" style="z - index: 9999;">出库数据删除成功</div>`).dialog({
+                                modal: true,
+                                draggable: false,
+                                classes: {
+                                    "ui-dialog": "my-dialog"
+                                },
+                                open: function () {
+                                    setTimeout(function () {
+                                        $(this).dialog("close");
+                                    }.bind(this), 1000); // 1秒后自动关闭
+                                }
+                            });
+
+                            showOverlay(now_BatchId);
+
+                            var selectedDate = $('#dateInput').val();
+
+                            initializeSelectProduct();
+
+                            loadBatchData(selectedDate);// 重新加载批次数据
+
+                        } else {
+                            alert('出库数据删除失败，请稍后再试');
+                        }
+                    },
+                    error: function () {
+                        alert('请求出错，请稍后再试');
+                    }
+                });
+            }
+        }
+
+    </script>
+</body>
+</html>

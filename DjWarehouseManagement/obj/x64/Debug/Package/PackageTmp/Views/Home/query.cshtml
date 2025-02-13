@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>查询界面</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .result-item {
+            font-size: 12px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* 控制一行两个结果 div */
+        .result-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .result-item {
+            width: 48%; /* 使每个 div 占 50% 减去间隙 */
+        }
+
+        .no-results {
+            color: red;
+            text-align: center;
+            font-size: 18px;
+        }
+
+/*        .container {
+            position: fixed;
+            top: 80px;
+            z-index: 1000;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- 查询输入框部分 -->
+        <div class="mb-3">
+            <input type="text" class="form-control" id="selectInput" placeholder="请输入查询条件">
+            <select class="form-select" id="selectType" style="width: 100%;" onchange="selectType_onchange();" >
+                <option value="">---选择品类---</option>
+            </select>
+            <select class="form-select" id="selectColor" style="width: 100%;">
+                <option value="">---当前产品清单---</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" id="searchBtn">搜索</button>
+        <button class="btn btn-primary" id="resetBtn">重置</button>
+
+        <!-- 查询结果展示区域 -->
+        <div class="mt-4" id="resultArea"></div>
+    </div>
+
+    <!-- 引入jQuery和Bootstrap的JS -->
+    <script src="~/Scripts/jquery-3.7.0.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        var lastSearch_Val = "";
+
+        $(document).ready(function () {
+
+            // 点击搜索按钮的事件
+            $('#searchBtn').click(function () {
+                initData();
+            });
+        });
+
+        //初始化
+        function initData() {
+            // 获取输入的颜色和色号
+            var selectInput = $('#selectInput').val().trim();
+
+            if (selectInput != lastSearch_Val) {
+                lastSearch_Val = selectInput;
+                //清空下拉框
+                $('#selectType').empty();
+                $('#selectType').append('<option value="">---选择品类---</option>');
+            }
+
+
+            //获取输入的产品工艺
+            var selectType = $('#selectType').val().trim();
+            //获取输入的颜色
+            var selectColor = $('#selectColor').val().trim();
+
+            // 清空之前的查询结果
+            //$('#resultArea').empty();
+
+            // 发送Ajax请求到后端
+            $.ajax({
+                url: '/Home/QueryInventoryData', // 后端控制器的路径
+                type: 'POST',
+                data: {
+                    selectInput: selectInput,
+                    selectType: selectType,
+                    selectColor: selectColor
+                },
+                success: function (response) {
+                    // 确保数据为JSON对象
+                    const data = JSON.parse(response);
+
+                    $('#selectColor').empty();
+                    $('#selectColor').append('<option value="">---当前产品清单---</option>');
+
+                    //循环遍历data数据
+                    for (let i = 0; i < data.length; i++) {
+                        //获取工艺
+                        var process = data[i].process;
+
+                        //把工艺数据添加到下拉框,并去重
+                        if ($('#selectType option[value="' + process + '"]').length == 0) {
+                            $('#selectType').append('<option value="' + process + '">' + process + '</option>');
+                        }
+                        //获取颜色
+                        var color_colorCode = "" + data[i].color + " [" + data[i].colorCode + "]";
+                        var color = "" + data[i].color;
+                        //获取数量
+                        var remainingQuantity = data[i].remainingQuantity;
+                        //把颜色数据添加到下拉框,并去重
+                        if ($('#selectColor option[value="' + color_colorCode + '"]').length == 0) {
+                            $('#selectColor').append('<option value="' + color + '">' + color_colorCode + '  (' + remainingQuantity + '支)</option>');
+                        }
+
+                    }
+
+
+                    // 处理后端返回的数据
+                    if (data.length === 0) {
+                        $('#resultArea').append('<p class="no-results">未找到符合条件的货物。</p>');
+                    } else {
+                        const resultContainer = $('<div class="result-container"></div>');
+                        data.forEach(item => {
+                            const resultDiv = `
+                                <div class="result-item">
+                                    <p><strong>颜色/色号:</strong> ${item.color} / ${item.colorCode}</p>
+                                    <p><strong>工艺:</strong> ${item.process}</p>
+                                    <p><strong>码数:</strong> ${item.actualSize}</p>
+                                    <p><strong>货架位置:</strong> ${item.explain}</p>
+                                    <p><strong>数量:</strong> ${item.remainingQuantity}</p>
+                                </div>`;
+                            resultContainer.append(resultDiv);
+                        });
+                        $('#resultArea').append(resultContainer);
+                    }
+                },
+                error: function () {
+                    $('#resultArea').append('<p class="no-results">查询出错，请稍后再试。</p>');
+                }
+            });
+        }
+
+        // 重置按钮的事件
+        $('#resetBtn').click(function () {
+            $('#selectInput').val('');
+            $('#selectType').val('');
+            $('#selectColor').val('');
+            $('#resultArea').empty();
+
+            //重新搜索
+            $('#searchBtn').click();
+        });
+
+        // 选择品类下拉框改变事件
+        function selectType_onchange() {
+            initData();
+        }
+
+    </script>
+</body>
+</html>

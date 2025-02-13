@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>产品界面</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .result-item {
+            font-size: 12px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* 控制一行两个结果 div */
+        .result-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .result-item {
+            width: 48%; /* 使每个 div 占 50% 减去间隙 */
+        }
+
+        .no-results {
+            color: red;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* 全屏覆盖的弹出div */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none;
+            overflow-y: auto; /* 确保弹出内容可滚动 */
+        }
+
+        .overlay-content {
+            background-color: #fff;
+            padding: 20px;
+            margin: 50px auto;
+            width: 80%;
+            height: 80%;
+            overflow-y: auto;
+            position: relative; /* 添加相对定位，确保确定按钮固定在底部 */
+        }
+
+        /* 样式设置 */
+        .close-btn, .create-btn {
+            margin-right: 10px;
+        }
+
+        /* 禁止页面在弹出时滚动 */
+        body.modal-open {
+            overflow: hidden !important;
+        }
+
+        /* 确定按钮固定在弹出div的最底部并占满宽度 */
+        .confirm-create-btn {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0; /* 确定按钮的圆角去掉 */
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- 查询输入框部分 -->
+        <div class="mb-3">
+            <input type="text" class="form-control" id="selectInput" placeholder="请输入查询条件">
+        </div>
+        <button class="btn btn-primary" id="searchBtn">搜索</button>
+        <button class="btn btn-primary" id="addProductDataBtn">新建</button>
+
+        <!-- 查询结果展示区域 -->
+        <div class="mt-4" id="resultArea"></div>
+    </div>
+
+    <div id="createDataOverlay" class="overlay">
+        <div class="overlay-content ">
+            <button class="btn btn-secondary close-create-btn" id="closeData_Div">返回</button>
+            <h3>创建产品数据</h3>
+            <!-- 创建出库数据的表单可以在这里添加 -->
+            <label for="source1" class="form-label">产品类别:</label>
+            <!-- 在下面添加一个下拉框,选择项有正品,B级布,默认是正品 -->
+            <select class="form-select" id="selectProductType">
+                <option value="正品">正品</option>
+                <option value="B级品">B级品</option>
+            </select>
+
+            <label for="color" class="form-label">颜色:</label>
+            <input type="text" class="form-control" id="color" placeholder="请输入颜色">
+
+            <label for="colorCode" class="form-label">色号(若有印花版号也在此输入):</label>
+            <input type="text" class="form-control" id="colorCode" placeholder="请输入色号或印花版号">
+
+            <label for="process" class="form-label">加工工艺:</label>
+            <input type="text" class="form-control" id="process" placeholder="请输入加工工艺">
+
+            <label for="printCode" class="form-label">印花版号:</label>
+            <input type="text" disabled="disabled" class="form-control" id="printCode" placeholder="请输入印花版号">
+
+            <label for="specification" class="form-label">规格:</label>
+            <input type="text" class="form-control" id="specification" placeholder="请输入规格">
+
+            <label for="size" class="form-label">码数:</label>
+            <!-- 在下面是输入框,输入数字 -->
+            <input type="number" class="form-control" id="size" placeholder="请输入码数">
+
+            <label id="hightLabel" style="height:100px;"></label>
+            <!-- 这里可以添加其他创建入库的表单 -->
+            <!-- 新增 确定 按钮，并固定在最下方，宽度占满 -->
+            <button class="btn btn-primary confirm-create-btn" id="createData_Save">保存</button>
+        </div>
+    </div>
+
+    <!-- 引入jQuery和Bootstrap的JS -->
+    <script src="~/Scripts/jquery-3.7.0.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // 点击搜索按钮的事件
+            $('#searchBtn').click(function () {
+                // 获取输入的颜色和色号
+                const selectInput = $('#selectInput').val().trim();
+
+                // 清空之前的查询结果
+                $('#resultArea').empty();
+
+                // 发送Ajax请求到后端
+                $.ajax({
+                    url: '/Home/QueryProductData', // 后端控制器的路径
+                    type: 'POST',
+                    data: {
+                        selectInput: selectInput
+                    },
+                    success: function (response) {
+                        // 确保数据为JSON对象
+                        const data = JSON.parse(response);
+
+                        // 处理后端返回的数据
+                        if (data.length === 0) {
+                            $('#resultArea').append('<p class="no-results">未找到符合条件的产品。</p>');
+                        } else {
+                            const resultContainer = $('<div class="result-container"></div>');
+                            data.forEach(item => {
+                                const resultDiv = `
+                                            <div class="result-item" onclick="AddProduct('${item.productType}','${item.color}','${item.colorCode}','${item.process}','${item.printCode}','${item.specification}','${item.size}')">
+                                                <p><strong>级别:</strong> ${item.productType}</p>
+                                                <p><strong>颜色/色号:</strong> ${item.color} / ${item.colorCode}</p>
+                                                <p><strong>工艺:</strong> ${item.process}</p>
+                                                <p><strong>规格:</strong> ${item.specification}</p>
+                                                <p><strong>码数:</strong> ${item.size}</p>
+                                            </div>`;
+                                resultContainer.append(resultDiv);
+                            });
+                            $('#resultArea').append(resultContainer);
+                        }
+                    },
+                    error: function () {
+                        $('#resultArea').append('<p class="no-results">查询出错，请稍后再试。</p>');
+                    }
+                });
+            });
+        });
+
+        //点击新建按钮,弹出createDataOverlay div
+        $('#addProductDataBtn').click(function () {
+            //清空输入框
+            $('#selectProductType').val('正品');
+            $('#color').val('');
+            $('#colorCode').val('');
+            $('#process').val('');
+            $('#printCode').val('null');
+            $('#specification').val('');
+            $('#size').val('');
+
+            $('#createDataOverlay').show();
+            $('body').addClass('modal-open');
+        });
+
+        //点击返回按钮,关闭createDataOverlay div
+        $('#closeData_Div').click(function () {
+            //清空输入框
+            $('#selectProductType').val('正品');
+            $('#color').val('');
+            $('#colorCode').val('');
+            $('#process').val('');
+            $('#printCode').val('null');
+            $('#specification').val('');
+            $('#size').val('');
+
+            $('#createDataOverlay').hide();
+            $('body').removeClass('modal-open');
+        });
+
+        // 点击产品信息,弹出新建框
+        function AddProduct(selectProductType, color, colorCode, process, printCode, specification, size) {
+
+            //清空输入框
+            $('#selectProductType').val(selectProductType);
+            $('#color').val('');
+            $('#colorCode').val('');
+            $('#process').val(process);
+            $('#printCode').val(printCode);
+            $('#specification').val(specification);
+            $('#size').val(size);
+
+            $('#createDataOverlay').show();
+            $('body').addClass('modal-open');
+        }
+
+        //点击保存按钮,保存数据
+        $('#createData_Save').click(function () {
+            // 获取输入的数据
+            var productType = $('#selectProductType').val();
+            var color = $('#color').val().trim();
+            var colorCode = $('#colorCode').val().trim();
+            var process = $('#process').val().trim();
+            var printCode = $('#printCode').val().trim();
+            var specification = $('#specification').val().trim();
+            var size = $('#size').val().trim();
+
+            // 确保输入的数据不为空
+            if (color === '' || colorCode === '' || process === '' || specification === '' || size === '') {
+                alert('请填写完整的产品数据');
+                return;
+            }
+
+            // 发送Ajax请求到后端
+            $.ajax({
+                url: '/Home/CreateProductData', // 后端控制器的路径
+                type: 'POST',
+                data: {
+                    productType: productType,
+                    color: color,
+                    colorCode: colorCode,
+                    process: process,
+                    printCode: printCode,
+                    specification: specification,
+                    size: size
+                },
+                success: function (response) {
+                    // 确保数据为JSON对象
+                    var data = JSON.parse(response);
+                    if (data.status == "success") {
+                        alert('保存成功');
+                        $('#createDataOverlay').hide();
+                        $('body').removeClass('modal-open');
+
+                        // 清空之前的查询结果
+                        $('#selectInput').empty();
+                        //点击搜索按钮,刷新数据
+                        $('#searchBtn').click();
+
+
+                    } else {
+                        alert('数据更新失败，请稍后再试');
+                    }
+                },
+                error: function () {
+                    alert('保存失败');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

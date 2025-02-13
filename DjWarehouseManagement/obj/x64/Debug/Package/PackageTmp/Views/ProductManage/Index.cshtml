@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="@Url.Content("~/Scripts/newWeb/assets/img/favicon.ico")">
+    <link rel="icon" type="image/png" href="@Url.Content("~/Scripts/newWeb/assets/img/favicon.ico")">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>产品Index</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,800" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link href="@Url.Content("~/Scripts/newWeb/assets/css/main.css")" rel="stylesheet" />
+
+    <!-- Animation CSS -->
+    <link href="@Url.Content("~/Scripts/newWeb/assets/css/vendor/aos.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Scripts/bootstrap-table-master/dist/bootstrap-table.css")" rel="stylesheet" />
+
+    <!-- App favicon -->
+    <link href="@Url.Content("~/Scripts/newWeb2/assets/images/favicon.ico")" rel="stylesheet" />
+
+    <!-- Daterangepicker css -->
+    <link href="@Url.Content("~/Scripts/newWeb2/assets/vendor/daterangepicker/daterangepicker.css")" rel="stylesheet" />
+
+    <!-- Vector Map css -->
+    <link href="@Url.Content("~/Scripts/newWeb2/assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css")" rel="stylesheet" />
+
+    <!-- Theme Config Js -->
+    <script src="@Url.Content("~/Scripts/newWeb2/assets/js/config.js")" type="text/javascript"></script>
+
+    <link href="@Url.Content("~/Scripts/newWeb2/assets/css/app.css?v=1.1.1")" rel="stylesheet" type="text/css" id="app-style" />
+
+    <!-- Icons css -->
+    <link href="@Url.Content("~/Scripts/newWeb2/assets/css/icons.css")" rel="stylesheet" type="text/css" />
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main01" @*class="container"*@>
+
+
+
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0 p-2 bg-light-subtle">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);"><i class="ri-home-4-line"></i> 主页</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="/ProductManage/Index">产品维护</a></li>
+                            @*<li class="breadcrumb-item active" aria-current="page">库存查询</li>*@
+                        </ol>
+                    </nav>
+                    <div id="toolbar">
+                        <div class="form-inline" role="form">
+                            <div class="form-group mr-3">
+                                <!-- 输入框 -->
+                                <input type="text" id="selectInput" class="form-control input-round " placeholder="搜索内容">
+                            </div>
+                            <div class="form-group">
+                                <!-- 按钮组 -->
+                                <button id="searchBtn" type="button" @*type="submit"*@ class="btn btn-success mr-2">搜索</button>
+                                <button id="resetBtn" type="button" class="btn btn-success mr-2">重置</button>
+                                <button id="AddData" type="button" class="btn btn-success mr-2">新建产品</button>
+                                <button id="CiteAddData" type="button" class="btn btn-success mr-2">引用新建</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <section class="@*pt-4*@ pb-5 aos-init aos-animate" data-aos="fade-up">
+                        @*<h3 class="h5 mb-4 font-weight-bold">Table</h3>*@
+                        <div class="table-responsive">
+
+
+                            <table id="table01"
+                                   class="table-bordered table-centered mb-0"
+                                   data-show-print="true"
+                                   data-toggle="table"
+                                   data-show-toggle="true"
+                                   data-locale="zh-CN"
+                                   @*data-height="800"*@
+                                   data-fixed-scroll="true"
+                                   data-ajax="ajaxRequest"
+                                   @*data-pagination="true"*@
+                                   @*data-side-pagination="server"*@
+                                   @*data-response-handler="responseHandler"*@
+                                   @*data-toolbar="#toolbar"*@
+                                   @*data-buttons-align="left"*@
+                                   data-click-to-select="true"
+                                   data-search="true"
+                                   data-show-columns="true"
+                                   data-maintain-meta-data="true">
+                                <thead class="bg-cyan">
+                                    <tr>
+                                        <th data-field="state" data-checkbox="true"></th>
+                                        <th data-field="id" data-visible="false">ID</th>
+                                        <th data-field="productType">级别</th>
+                                        <th data-field="color" data-sortable="true">颜色</th>
+                                        <th data-field="colorCode" data-sortable="true">色号</th>
+                                        <th data-field="process" data-sortable="true">工艺</th>
+                                        <th data-field="specification" data-sortable="true">规格</th>
+                                        <th data-field="size">码数</th>
+                                        
+                                        
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div> <!-- end table-responsive-->
+                    </section>
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div>
+
+
+
+
+
+    </main>
+
+    <!--------------------------------------
+    JAVASCRIPTS
+    --------------------------------------->
+
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/vendor/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/vendor/popper.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/vendor/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/vendor/share.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/functions.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-table-master/dist/bootstrap-table.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-table-master/dist/extensions/print/bootstrap-table-print.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-table-master/dist/bootstrap-table-locale-all.js")" type="text/javascript"></script>
+
+    <!-- Animation -->
+    <script src="@Url.Content("~/Scripts/newWeb/assets/js/vendor/aos.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/newWeb2/assets/js/app.js")" type="text/javascript"></script>
+
+    <noscript>
+        <style>
+            *[data-aos] {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        AOS.init({
+            duration: 700
+        });
+    </script>
+
+    <!-- Disable animation on less than 1200px, change value if you like -->
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 200;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+
+    <script>
+        //静态弹出框,固定主页面背景,禁止滚动
+        const myModal = document.getElementById('scrollable-modal');
+        myModal.addEventListener('shown.bs.modal', function () {
+            window.parent.postMessage({ type: 'modal', value: false }, '*');
+        });
+        myModal.addEventListener('hidden.bs.modal', function () {
+            window.parent.postMessage({ type: 'modal', value: true }, '*');
+        });
+    </script>
+
+    <script>
+        //设置页面加载完成后事件,更新主页面高度
+        const table01 = $('#table01');
+        table01.on('load-success.bs.table', function (data) {
+            // 表格加载完成后，强制更新滚动容器
+            //$('.table-responsive').scrollLeft(0); // 可选：将滚动位置初始化
+            // 重设列宽和表格视图
+            table01.bootstrapTable('resetView');
+            //const height = document.documentElement.scrollHeight;
+            const mainDiv = document.getElementById('main01');
+            const height = mainDiv.offsetHeight + 50;
+            //alert(height);
+            window.parent.postMessage({ type: 'height', value: height }, '*');
+            //console.log("表格的 HTML 已完全渲染！");
+        })
+        table01.on('page-change.bs.table', function (data) {
+            // 表格加载完成后，强制更新滚动容器
+            //$('.table-responsive').scrollLeft(0); // 可选：将滚动位置初始化
+            // 重设列宽和表格视图
+            table01.bootstrapTable('resetView');
+            //const height = document.documentElement.scrollHeight;
+            const mainDiv = document.getElementById('main01');
+            const height = mainDiv.offsetHeight + 50;
+            //alert(height);
+            window.parent.postMessage({ type: 'height', value: height }, '*');
+            //console.log("表格的 HTML 已完全渲染！");
+        })
+    </script>
+
+
+    <script>
+
+        var lastSearch_Val = "";
+
+        $(document).ready(function () {
+
+            // 点击搜索按钮的事件
+            $('#searchBtn').click(function () {
+                initData();
+            });
+
+            var table = $('#table01');
+            table.on('dbl-click-cell.bs.table', function (e, field, value, row, $element) {
+                //表格双击事件
+                //field：单元格对应的字段名称。
+                //value：单元格对应的数据值。
+                //row：行对应的记录。
+                //$element：td 元素。
+                var dateInput = $('#dateInput').val().trim();
+                var BatchId = row.Id;
+                var source = row.source;
+                window.location.href = "/ProductEntry/Entry_Index?BatchId="
+                    + BatchId + "&source=" + source + "&dateInput=" + dateInput;
+            });
+
+            table.on('click-row.bs.table', function (e, row, $element, field) {
+                //表格单击事件
+                //row：单击的行对应的记录。
+                //$element：tr 元素。
+                //field：与单击的单元格对应的字段名称。
+                //if (field ==='menu_td') {
+                //return; // 如果点击的是按钮，则不执行行点击逻辑
+                //}
+                //var Entry_Batch_Id = row.Id;
+                //window.location.href = "/ProductEntry/Index_Info"; // 跳转到详情页
+            });
+
+            $('#AddData').on('click', function () {
+
+                window.location.href = "/ProductManage/Index_Add";
+            });
+
+            $('#CiteAddData').on('click', function () {
+                var getSelections = table.bootstrapTable('getSelections');
+                if (getSelections == null) {
+                    return;
+                }
+                var id = getSelections[0].id;
+                var productType = getSelections[0].productType;
+                var color = getSelections[0].color;
+                var colorCode = getSelections[0].colorCode;
+                var process = getSelections[0].process;
+                var specification = getSelections[0].specification;
+                var size = getSelections[0].size;
+                window.location.href = "/ProductManage/Index_Add?id="
+                    + id + "&productType=" + productType + "&color=" + color + "&colorCode=" + colorCode
+                    + "&process=" + process + "&specification=" + specification + "&size=" + size;
+
+            });
+
+
+        });
+
+        //初始化
+        function initData() {
+            $('#table01').bootstrapTable('refresh'); // 刷新表格
+        }
+
+        // 重置按钮的事件
+        $('#resetBtn').click(function () {
+            $('#selectInput').val('');
+
+            //重新搜索
+            $('#searchBtn').click();
+        });
+
+
+        //ajax加载数据表
+        function ajaxRequest(params) {
+            // 获取输入的颜色和色号
+            var selectInput = $('#selectInput').val().trim();
+
+            // 发送Ajax请求到后端
+            $.ajax({
+                url: '/ProductManage/QueryProductData', // 后端控制器的路径
+                type: 'POST',
+                data: {
+                    selectInput: selectInput
+                },
+                success: function (response) {
+                    // 确保数据为JSON对象
+                    const data = JSON.parse(response);
+
+                    var rows_Data = JSON.parse(data.Rows);
+
+                    params.success(rows_Data);
+                },
+                error: function () {
+                    $('#resultArea').append('<p class="no-results">查询出错，请稍后再试。</p>');
+                }
+            });
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

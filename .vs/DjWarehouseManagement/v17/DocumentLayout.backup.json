@@ -1,0 +1,1317 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|d:\\mywork\\c#\\dongjunproject\\djwarehousemanagement\\djwarehousemanagement\\djwarehousemanagement\\controllers\\productpricemanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\productpricemanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\productexitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\productexitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\entry_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\entry_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\exit_index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\exit_index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\productquerycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\productquerycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djbll\\inventoryquerybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|solutionrelative:djbll\\inventoryquerybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djdal\\inventoryquerydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|solutionrelative:djdal\\inventoryquerydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productquery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productquery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djdal\\stockexitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|solutionrelative:djdal\\stockexitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djbll\\stockexitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|solutionrelative:djbll\\stockexitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productmanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productmanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productmanage\\index_settype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productmanage\\index_settype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\productmanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\productmanagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productmanage\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productmanage\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\exit_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\exit_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djdal\\pricemanagedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|solutionrelative:djdal\\pricemanagedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_product_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_product_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\exit_index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\exit_index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\exit_index_prints.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\exit_index_prints.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\index_add_producttype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\index_add_producttype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\index_update_producttype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\index_update_producttype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productpricemanage\\price_history_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productpricemanage\\price_history_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\filters\\loginfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\filters\\loginfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_product_price_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_product_price_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djbll\\stockentrybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|solutionrelative:djbll\\stockentrybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\productentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\productentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djdal\\stockentrydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|solutionrelative:djdal\\stockentrydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djdal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77305EDF-F12D-4900-B077-C152676D007E}|DjDAL\\DjDAL.csproj|solutionrelative:djdal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_product_price_history_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_product_price_history_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_product_type_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_product_type_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\stockexitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\stockexitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\login\\index_new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\login\\index_new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\login\\login_res.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\login\\login_res.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\entry_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\entry_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\auth-login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\auth-login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\product_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\product_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\query.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\query.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\entry_index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\entry_index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productexit\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productexit\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\index_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\entry_index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\entry_index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\exit_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\exit_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\productentry\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\productentry\\index_update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\form-validation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\form-validation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\assets\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\assets\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\ui-breadcrumb.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\ui-breadcrumb.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\ui-modals.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\ui-modals.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb\\assets\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb\\assets\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\assets\\css\\app-rtl.min.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\assets\\css\\app-rtl.min.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\scripts\\newweb2\\tables-datatable.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\scripts\\newweb2\\tables-datatable.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\home\\old_index - \u590D\u5236.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\home\\old_index - \u590D\u5236.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_user_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_user_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djbll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2CCB485-2760-42E8-8C18-EF4EE74F2158}|DjBLL\\DjBLL.csproj|solutionrelative:djbll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djmodels\\entity\\tb_stock_entry_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A798C7-3FDA-44BD-9B70-89D5F37D5B08}|DjModels\\DjModels.csproj|solutionrelative:djmodels\\entity\\tb_stock_entry_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\djwarehousemanagement\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73ED8BF-B0D3-4746-93CD-35F415175B89}|DjWarehouseManagement\\DjWarehouseManagement.csproj|solutionrelative:djwarehousemanagement\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InventoryQueryBLL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\InventoryQueryBLL.cs",
+              "RelativeDocumentMoniker": "DjBLL\\InventoryQueryBLL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\InventoryQueryBLL.cs",
+              "RelativeToolTip": "DjBLL\\InventoryQueryBLL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T01:57:35.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryQueryDAL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\InventoryQueryDAL.cs",
+              "RelativeDocumentMoniker": "DjDAL\\InventoryQueryDAL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\InventoryQueryDAL.cs",
+              "RelativeToolTip": "DjDAL\\InventoryQueryDAL.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswHQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:58:08.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Exit_Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Add.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T01:48:42.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Index.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T02:24:16.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "entry_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\entry_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\entry_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\entry_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\entry_Index.cshtml",
+              "ViewState": "AgIAAL0CAAAAAAAAAAAAAMQCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T00:07:34.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductExitController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductExitController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\ProductExitController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductExitController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\ProductExitController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwGcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T00:12:54.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index.cshtml",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T00:36:54.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductPriceManageController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductPriceManageController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\ProductPriceManageController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductPriceManageController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\ProductPriceManageController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAzwL0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T00:35:03.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "detail.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\detail.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\detail.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\detail.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T08:55:46.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductQuery\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductQuery\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductQuery\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductQuery\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-01T14:37:37.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductQueryController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductQueryController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\ProductQueryController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductQueryController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\ProductQueryController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA2wCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T03:41:03.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StockExitDAL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\StockExitDAL.cs",
+              "RelativeDocumentMoniker": "DjDAL\\StockExitDAL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\StockExitDAL.cs",
+              "RelativeToolTip": "DjDAL\\StockExitDAL.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAswD4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T00:51:07.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StockExitBLL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\StockExitBLL.cs",
+              "RelativeDocumentMoniker": "DjBLL\\StockExitBLL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\StockExitBLL.cs",
+              "RelativeToolTip": "DjBLL\\StockExitBLL.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T08:00:54.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductManage\\Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductManage\\Index_Add.cshtml",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAAL8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T15:09:26.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Index\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Index\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Index\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Index\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-03T14:09:53.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductManage\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductManage\\Index.cshtml",
+              "ViewState": "AgIAABMBAAAAAAAAAAA0wCMBAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T14:25:05.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index_SetType.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index_SetType.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductManage\\Index_SetType.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductManage\\Index_SetType.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductManage\\Index_SetType.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwGQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T07:20:26.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Exit_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index.cshtml",
+              "ViewState": "AgIAADUBAAAAAAAAAAAAADsBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T00:55:27.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "tb_product_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_product_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_product_Entity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:22:42.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductManageController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductManageController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\ProductManageController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductManageController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\ProductManageController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA0wEAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:52:02.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PriceManageDAL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\PriceManageDAL.cs",
+              "RelativeDocumentMoniker": "DjDAL\\PriceManageDAL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\PriceManageDAL.cs",
+              "RelativeToolTip": "DjDAL\\PriceManageDAL.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T01:51:01.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Exit_Index_Update.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Update.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Update.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Update.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Update.cshtml",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAAEIBAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T02:29:24.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add.cshtml",
+              "ViewState": "AgIAAO4AAAAAAAAAAAA0wDQBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T02:53:37.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Exit_Index_Prints.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Prints.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Prints.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Prints.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Exit_Index_Prints.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T08:47:21.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index_Update.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update.cshtml",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAmwPEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T09:38:23.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index_Update_ProductType.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update_ProductType.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update_ProductType.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update_ProductType.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Update_ProductType.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T08:01:25.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Price_History_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Price_History_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Price_History_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Price_History_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Price_History_Index.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAG4AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T00:39:27.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index_Add_ProductType.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add_ProductType.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add_ProductType.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add_ProductType.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductPriceManage\\Index_Add_ProductType.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T09:45:35.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginFilter.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Filters\\LoginFilter.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Filters\\LoginFilter.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Filters\\LoginFilter.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Filters\\LoginFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:02:25.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index_Update.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index_Update.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Index_Update.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index_Update.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Index_Update.cshtml",
+              "ViewState": "AgIAANsAAAAAAAAAAAAAAEUAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T00:47:08.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAANYBAAAAAAAAAAAAAOYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T12:00:33.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StockEntryBLL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\StockEntryBLL.cs",
+              "RelativeDocumentMoniker": "DjBLL\\StockEntryBLL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\StockEntryBLL.cs",
+              "RelativeToolTip": "DjBLL\\StockEntryBLL.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAIAzwGsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:15:56.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "tb_product_price_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_price_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_product_price_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_price_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_product_price_Entity.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwBQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T09:08:01.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductEntryController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductEntryController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\ProductEntryController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\ProductEntryController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\ProductEntryController.cs",
+              "ViewState": "AgIAADQBAAAAAAAAAAAgwEEBAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:13:50.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "exit_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\exit_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\exit_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\exit_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\exit_Index.cshtml",
+              "ViewState": "AgIAAEwDAAAAAAAAAAAAAFwDAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T04:37:54.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "StockEntryDAL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\StockEntryDAL.cs",
+              "RelativeDocumentMoniker": "DjDAL\\StockEntryDAL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\StockEntryDAL.cs",
+              "RelativeToolTip": "DjDAL\\StockEntryDAL.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA8wBEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T02:10:27.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\UserDAL.cs",
+              "RelativeDocumentMoniker": "DjDAL\\UserDAL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjDAL\\UserDAL.cs",
+              "RelativeToolTip": "DjDAL\\UserDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T01:52:52.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "tb_product_price_history_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_price_history_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_product_price_history_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_price_history_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_product_price_history_Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T09:17:44.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "tb_product_type_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_type_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_product_type_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_product_type_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_product_type_Entity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T09:17:12.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index_New.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Index_New.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Login\\Index_New.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Index_New.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Login\\Index_New.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T16:36:21.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAzwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:43:08.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StockExitController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\StockExitController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\StockExitController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\StockExitController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\StockExitController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T01:28:16.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Entry_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAFkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T09:30:52.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T07:34:23.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Login_res.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Login_res.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Login\\Login_res.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Login_res.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Login\\Login_res.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwFYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T11:59:59.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T16:50:54.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T06:32:54.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\index.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb\\index.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\index.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb\\index.html",
+              "ViewState": "AgIAANoFAAAAAAAAAAAuwPkFAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-01T00:18:06.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "main.css",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\assets\\css\\main.css",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb\\assets\\css\\main.css",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\assets\\css\\main.css",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb\\assets\\css\\main.css",
+              "ViewState": "AgIAANsUAAAAAAAAAAAWwOgUAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-07T07:15:16.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T05:37:21.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "product_Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\product_Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\product_Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\product_Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\product_Index.cshtml",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAjwOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:26:05.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Index.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADwAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T14:12:58.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "auth-login.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\auth-login.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\auth-login.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\auth-login.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\auth-login.html",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAowH8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-10T16:41:19.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IndexController.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\IndexController.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Controllers\\IndexController.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Controllers\\IndexController.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Controllers\\IndexController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T02:52:41.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Entry_Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Add.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T01:54:53.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "query.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\query.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\query.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\query.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\query.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T07:44:32.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductExit\\Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductExit\\Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductExit\\Index_Add.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAALsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T00:42:25.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Index_Add.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index_Add.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Index_Add.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index_Add.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Index_Add.cshtml",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAAMIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T04:03:06.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Entry_Index_Update.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Update.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Update.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Update.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Entry_Index_Update.cshtml",
+              "ViewState": "AgIAANwCAAAAAAAAAAAAAOIDAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T14:26:24.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Index_Update.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index_Update.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\ProductEntry\\Index_Update.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\ProductEntry\\Index_Update.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\ProductEntry\\Index_Update.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAADsAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T13:28:02.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "form-validation.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\form-validation.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\form-validation.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\form-validation.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\form-validation.html",
+              "ViewState": "AgIAAJkDAAAAAAAAAAAAAJkDAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-07T07:50:32.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app.css",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app.css",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app.css",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app.css",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAQwLMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-07T07:12:15.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ui-breadcrumb.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\ui-breadcrumb.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\ui-breadcrumb.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\ui-breadcrumb.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\ui-breadcrumb.html",
+              "ViewState": "AgIAAJcDAAAAAAAAAAAqwKEDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-06T01:12:49.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "table-options.md",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\bootstrap-table-master\\site\\docs\\api\\table-options.md",
+              "ViewState": "AgIAADYHAAAAAAAAAAAawE0HAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-01-03T08:04:39.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "functions.js",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\assets\\js\\functions.js",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb\\assets\\js\\functions.js",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb\\assets\\js\\functions.js",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb\\assets\\js\\functions.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-01T04:28:15.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\index.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\index.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\index.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\index.html",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAWwA4AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-01T14:11:27.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ui-modals.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\ui-modals.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\ui-modals.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\ui-modals.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\ui-modals.html",
+              "ViewState": "AgIAAM8DAAAAAAAAAAAWwNYDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-03T09:39:21.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "app-rtl.min.css.map",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app-rtl.min.css.map",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app-rtl.min.css.map",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app-rtl.min.css.map",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\assets\\css\\app-rtl.min.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACc1A0AAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIhSURBVDhPrZTPaxpBFMe/ZiPGskgCFWksDVg8pAiiYA968GiMULBILXgtHvoHtP0H\u002BuMSL7k1twakAXM0em8O3aIoVnsxbWyo4kFEd8Witmtn3Glxa3dNIR94MN83\u002B968mTc7\u002BE0qldofDAbyEpOI7Wez2dssTM10Ol1lwxmFQgHpdJqpRZxO51ogELjn9XrX8vn8q2QyeUGYsGnAYDBwbIhQKLTL8/xdsjq63a6WrYxGI95isVz3eDxWm8120Wq1RGI/WBqoKpzH7XZjY32DKYVqrYpSqcTJsmw3m83xaDQqDYfDYzL1kezuO/1GM2E0eh9bt7YgSRI4joPVasVeag\u002BC8J4ezepkMlmPxWKPE4kEyHhIfFUatzKL1iCXz\u002BHpsyd48fI5\u002Bv0\u002B82I2FgQBmUzmWqPReERcD5UZnQopwWAQd7a3YTQaQc4N8QdxhHd28OX8HIeHbwzlchl\u002Bv99CPuWViCUVttttVCoVFItFHB29xenpO/yUZTgcDnpDIIoixuMxbeyf5uomFPsivjWbKqM\u002BPXS37PP54HK5mFIg3cXZ5zOmFtFNSJuSy50wpRAO79ILztQiSyu8abczpXBjcxO9Xo\u002BpRa78DC/V5XmjPj00t0z\u002BWXrHZvY3tU81NlpEM\u002BHBwWuYTCam1NDFtNDccqfTQZOc2b\u002BMzmmhqtBOOhqJRJi6HDSmXq8zNZeQPJRfycvygV6V/4G\u002BRjSWyasG\u002BAXgoDDx1ZYknAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-01-03T13:22:50.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "tables-datatable.html",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\tables-datatable.html",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Scripts\\newWeb2\\tables-datatable.html",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Scripts\\newWeb2\\tables-datatable.html",
+              "RelativeToolTip": "DjWarehouseManagement\\Scripts\\newWeb2\\tables-datatable.html",
+              "ViewState": "AgIAACwaAAAAAAAAAAAWwDoaAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-01T16:02:26.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "old_Index - \u590D\u5236.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\old_Index - \u590D\u5236.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Home\\old_Index - \u590D\u5236.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Home\\old_Index - \u590D\u5236.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Home\\old_Index - \u590D\u5236.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAABpwFsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-01T02:56:51.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Web.config",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Web.config",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Web.config",
+              "RelativeToolTip": "DjWarehouseManagement\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-31T02:37:06.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\packages.config",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\packages.config",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\packages.config",
+              "RelativeToolTip": "DjWarehouseManagement\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-27T07:27:19.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Global.asax.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Global.asax.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Global.asax.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\Global.asax.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAxwCAAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T02:36:24.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAACBswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T06:27:19.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "tb_user_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_user_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_user_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_user_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_user_Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:16:18.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "UserBLL.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\UserBLL.cs",
+              "RelativeDocumentMoniker": "DjBLL\\UserBLL.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjBLL\\UserBLL.cs",
+              "RelativeToolTip": "DjBLL\\UserBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T01:53:07.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "tb_stock_entry_Entity.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_stock_entry_Entity.cs",
+              "RelativeDocumentMoniker": "DjModels\\Entity\\tb_stock_entry_Entity.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjModels\\Entity\\tb_stock_entry_Entity.cs",
+              "RelativeToolTip": "DjModels\\Entity\\tb_stock_entry_Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:38:30.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T06:27:33.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Web.config",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\Views\\Web.config",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\Views\\Web.config",
+              "RelativeToolTip": "DjWarehouseManagement\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-27T06:27:28.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "favicon.ico - Icon [16x16, 32 \u4F4D, BMP]",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\favicon.ico",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\favicon.ico",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\favicon.ico - Icon [16x16, 32 \u4F4D, BMP]",
+              "RelativeToolTip": "DjWarehouseManagement\\favicon.ico - Icon [16x16, 32 \u4F4D, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-11-27T07:45:27.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "DjWarehouseManagement\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\MyWork\\C#\\DongJunProject\\DjWarehouseManagement\\DjWarehouseManagement\\DjWarehouseManagement\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "DjWarehouseManagement\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T07:34:19.844Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
