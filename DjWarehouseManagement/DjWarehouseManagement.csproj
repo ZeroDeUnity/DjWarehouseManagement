@@ -210,6 +210,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserManageController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductEntryController.cs" />
     <Compile Include="Controllers\ProductExitController.cs" />
@@ -3120,6 +3121,10 @@
     <Content Include="Views\ProductPriceManage\Index_Update_ProductType.cshtml" />
     <Content Include="Views\ProductExit\Exit_Index_Prints.cshtml" />
     <Content Include="Views\ProductManage\Index_SetType.cshtml" />
+    <Content Include="Views\UserManage\Index.cshtml" />
+    <Content Include="Views\UserManage\Index_Add.cshtml" />
+    <Content Include="Views\UserManage\Index_SetType.cshtml" />
+    <Content Include="Views\UserManage\Index_Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

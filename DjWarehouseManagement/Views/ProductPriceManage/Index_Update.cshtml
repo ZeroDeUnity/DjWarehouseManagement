@@ -132,7 +132,7 @@
     <label id="ViewBag_description" style="display: none;">@ViewBag.description</label>
     <label id="ViewBag_salePrice" style="display: none;">@ViewBag.salePrice</label>
     <label id="ViewBag_offerPrice" style="display: none;">@ViewBag.offerPrice</label>
-    <label id="ViewBag_createTime" style="display: none;">@ViewBag.createTime</label>
+    <label id="ViewBag_updateTime" style="display: none;">@ViewBag.updateTime</label>
 
     <!--------------------------------------
     JAVASCRIPTS
@@ -213,7 +213,7 @@
                 var productTypeId = $('#ViewBag_productTypeId').text();
                 var Old_salePrice = $('#ViewBag_salePrice').text();
                 var Old_offerPrice = $('#ViewBag_offerPrice').text();
-                var createTime = $('#ViewBag_createTime').text();
+                var updateTime = $('#ViewBag_updateTime').text();
                 var salePrice = $('#salePrice').val();
                 var offerPrice = $("#offerPrice").val();
 
@@ -223,7 +223,7 @@
                     productTypeId: productTypeId,
                     Old_salePrice: Old_salePrice,
                     Old_offerPrice: Old_offerPrice,
-                    createTime: createTime,
+                    updateTime: updateTime,
                     salePrice: salePrice,
                     offerPrice: offerPrice
                 };

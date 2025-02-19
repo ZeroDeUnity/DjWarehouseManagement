@@ -146,6 +146,7 @@
     <Compile Include="Entity\tb_stock_entry_Entity.cs" />
     <Compile Include="Entity\tb_stock_exit_batch_Entity.cs" />
     <Compile Include="Entity\tb_stock_exit_Entity.cs" />
+    <Compile Include="Entity\tb_user_type_Entity.cs" />
     <Compile Include="Entity\tb_user_Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

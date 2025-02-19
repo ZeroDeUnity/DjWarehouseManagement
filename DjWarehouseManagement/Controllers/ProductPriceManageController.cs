@@ -52,7 +52,7 @@ namespace DjWarehouseManagement.Controllers
             string description = Request.QueryString["description"];
             string salePrice = Request.QueryString["salePrice"];
             string offerPrice = Request.QueryString["offerPrice"];
-            string createTime = Request.QueryString["createTime"];
+            string updateTime = Request.QueryString["updateTime"];
 
             // 将参数传递给视图
             ViewBag.Id = Id;
@@ -61,7 +61,7 @@ namespace DjWarehouseManagement.Controllers
             ViewBag.description = description;
             ViewBag.salePrice = salePrice;
             ViewBag.offerPrice = offerPrice;
-            ViewBag.createTime = createTime;
+            ViewBag.updateTime = updateTime;
             return View();
         }
 
@@ -340,7 +340,7 @@ namespace DjWarehouseManagement.Controllers
                 string productTypeId = data["productTypeId"]?.ToString();
                 string Old_salePrice = data["Old_salePrice"]?.ToString();
                 string Old_offerPrice = data["Old_offerPrice"]?.ToString();
-                string createTime = data["createTime"]?.ToString();
+                string updateTime = data["updateTime"]?.ToString();
                 string salePrice = data["salePrice"]?.ToString();
                 string offerPrice = data["offerPrice"]?.ToString();
 
@@ -360,7 +360,7 @@ namespace DjWarehouseManagement.Controllers
                 //根据修改前的2个价格和修改后的2个价格，判断是否需要修改历史价格表
                 if (Old_salePrice != salePrice || Old_offerPrice != offerPrice)
                 {
-                    DateTime startDate = DateTime.Parse(createTime);
+                    DateTime startDate = DateTime.Parse(updateTime);
                    
 
                     TableData tableData2 = new TableData();

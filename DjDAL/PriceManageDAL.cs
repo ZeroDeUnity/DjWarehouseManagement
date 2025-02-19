@@ -34,7 +34,7 @@ namespace DjDAL
 
                 SqlStr = " SELECT ";
                 SqlStr += " t1.Id AS productTypeId,t1.typeName,t1.description, ";
-                SqlStr += " t2.Id,t2.offerPrice,t2.salePrice,t2.createTime ";
+                SqlStr += " t2.Id,t2.offerPrice,t2.salePrice,t2.createTime,t2.updateTime ";
                 SqlStr += " FROM tb_product_type AS t1 ";
                 SqlStr += " LEFT JOIN tb_product_price AS t2 ON t1.Id = t2.productTypeId AND t2.`status`='1' ";
                 SqlStr += " WHERE 1=1 ";

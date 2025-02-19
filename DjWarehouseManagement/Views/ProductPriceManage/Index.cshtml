@@ -113,7 +113,7 @@
                                         <th data-field="description" data-visible="false">类型描述</th>
                                         <th data-field="salePrice" data-sortable="true">销售价格</th>
                                         <th data-field="offerPrice" data-sortable="true" data-visible="false">报价价格</th>
-                                        <th data-field="createTime">生效时间</th>
+                                        <th data-field="updateTime">生效时间</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -219,10 +219,11 @@
                 //value：单元格对应的数据值。
                 //row：行对应的记录。
                 //$element：td 元素。
-                var Id = row.Id;
 
-                window.location.href = "/ProductPriceManage/Price_History_Index?Id="
-                    + Id;
+                var productTypeId = row.productTypeId;
+
+                window.location.href = "/ProductPriceManage/Price_History_Index?productTypeId="
+                    + productTypeId;
             });
 
             table.on('click-row.bs.table', function (e, row, $element, field) {
@@ -257,10 +258,10 @@
                 var description = getSelections[0].description;
                 var salePrice = getSelections[0].salePrice;
                 var offerPrice = getSelections[0].offerPrice;
-                var createTime = getSelections[0].createTime;
+                var updateTime = getSelections[0].updateTime;
                 window.location.href = "/ProductPriceManage/Index_Update?Id="
                     + Id + "&productTypeId=" + productTypeId + "&typeName=" + typeName + "&description" + description
-                    + "&salePrice=" + salePrice + "&offerPrice=" + offerPrice + "&createTime=" + createTime;
+                    + "&salePrice=" + salePrice + "&offerPrice=" + offerPrice + "&updateTime=" + updateTime;
             });
 
             $('#AddProductTypeData_Btn').on('click', function () {

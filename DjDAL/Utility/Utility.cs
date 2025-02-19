@@ -39,5 +39,14 @@ namespace DjDAL.Utility
             return userName;
         }
 
+        /// <summary>
+        /// 获取用户Id和用户名
+        /// </summary>
+        /// <returns></returns>
+        public static string GetUserIdAndName()
+        {
+            return GetUserId() + "_" + GetUserName();
+        }
+
     }
 }

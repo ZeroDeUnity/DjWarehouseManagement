@@ -235,11 +235,12 @@
                 //value：单元格对应的数据值。
                 //row：行对应的记录。
                 //$element：td 元素。
-                var dateInput = $('#dateInput').val().trim();
-                var BatchId = row.Id;
-                var source = row.source;
-                window.location.href = "/ProductEntry/Entry_Index?BatchId="
-                    + BatchId + "&source=" + source + "&dateInput=" + dateInput;
+
+                //var dateInput = $('#dateInput').val().trim();
+                //var BatchId = row.Id;
+                //var source = row.source;
+                //window.location.href = "/ProductEntry/Entry_Index?BatchId="
+                 //   + BatchId + "&source=" + source + "&dateInput=" + dateInput;
             });
 
             table.on('click-row.bs.table', function (e, row, $element, field) {
